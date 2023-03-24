@@ -24,49 +24,37 @@ class _homePageState extends State<homePage> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        image: DecorationImage(
-          image: AssetImage("assets/bg.jpg"),
-          fit: BoxFit.cover,
-        ),
+    return Scaffold(
+      backgroundColor: Colors.transparent,
+      bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Colors.grey[800],
+        selectedItemColor: Colors.white,
+        unselectedItemColor: Colors.grey[400],
+        items: <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home_outlined),
+            label: "Home",
+            backgroundColor: Colors.grey[800],
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.account_tree_outlined),
+            label: "Itinerary",
+            backgroundColor: Colors.grey[800],
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.people_outlined),
+            label: "Core Committee",
+            backgroundColor: Colors.grey[800],
+          ),
+        ],
+        currentIndex: _selectedIndex,
+        onTap: _onItemTapped,
       ),
-      child: Scaffold(
-        backgroundColor: Colors.transparent,
-        bottomNavigationBar: BottomNavigationBar(
-          unselectedItemColor: Colors.grey[400],
-          items: <BottomNavigationBarItem>[
-            BottomNavigationBarItem(
-              icon: Icon(Icons.home_outlined),
-              label: "Home",
-              backgroundColor: Colors.grey[800],
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.account_tree_outlined),
-              label: "Itinerary",
-              backgroundColor: Colors.grey[800],
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.handshake_outlined),
-              label: "Sponsors",
-              backgroundColor: Colors.grey[800],
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.people_outlined),
-              label: "Core Committee",
-              backgroundColor: Colors.grey[800],
-            ),
-          ],
-          currentIndex: _selectedIndex,
-          onTap: _onItemTapped,
-        ),
-        body: <Widget>[
-          mainPage(),
-          itenaryPage(),
-          sponsors(),
-          coreCommitee(),
-        ][currentPageIndex],
-      ),
+      body: <Widget>[
+        mainPage(),
+        itenaryPage(),
+        coreCommitee(),
+      ][currentPageIndex],
     );
   }
 }

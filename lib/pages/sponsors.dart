@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+/// THE SPONSORS PAGE IS NOT BEEN USED ANYWHERE. THE PAGE HAS BEEN PRESERVED FOR FUTURE PROBABLE USES.
+
 class sponsors extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
@@ -34,15 +36,7 @@ class sponsors extends StatelessWidget{
             Container(
               height: 50,
               alignment: Alignment.centerLeft,
-              child: Text('      About:- ',style: TextStyle(
-              fontSize: 15.0,
-
-                color: Colors.white
-              ),),
-            ),Container(
-              height: 50,
-              alignment: Alignment.centerLeft,
-              child: Text('      It is simply a dummy text',style: TextStyle(
+              child: Text('lorem ipsum',style: TextStyle(
                   fontSize: 15.0, color: Colors.white
               ),),
             )

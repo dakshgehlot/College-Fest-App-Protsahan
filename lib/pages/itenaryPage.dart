@@ -57,7 +57,7 @@ class _itenaryPageState extends State<itenaryPage> {
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Text(
-                            'All Events Description',
+                            'All Events Timeline',
                             style: TextStyle(
                               fontFamily: 'Lexend Deca',
                               color: Color(0xFF95A1AC),
@@ -234,7 +234,7 @@ class _itenaryPageState extends State<itenaryPage> {
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             4, 0, 0, 0),
                                         child: Text(
-                                          'Football',
+                                          'Foosball',
                                           style: TextStyle(
                                             fontFamily: 'Lexend Deca',
                                             color: Color(0xFF39D2C0),
@@ -498,7 +498,7 @@ class _itenaryPageState extends State<itenaryPage> {
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
                                       Text(
-                                        'Elimainator',
+                                        'Eliminator',
                                         style: TextStyle(
                                           fontFamily: 'Lexend Deca',
                                           color: Colors.white,
@@ -765,7 +765,7 @@ class _itenaryPageState extends State<itenaryPage> {
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Text(
-                            'All Events Description',
+                            'All Events Timeline',
                             style: TextStyle(
                               fontFamily: 'Lexend Deca',
                               color: Color(0xFF95A1AC),
@@ -1197,7 +1197,7 @@ class _itenaryPageState extends State<itenaryPage> {
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Text(
-                            'All Events Description',
+                            'All Events Timeline',
                             style: TextStyle(
                               fontFamily: 'Lexend Deca',
                               color: Color(0xFF95A1AC),
@@ -1256,7 +1256,7 @@ class _itenaryPageState extends State<itenaryPage> {
                                         MainAxisAlignment.spaceBetween,
                                     children: [
                                       Text(
-                                        '25 and 26, Mar 2023',
+                                        '25 and 26 Mar 2023',
                                         style: TextStyle(
                                           fontFamily: 'Lexend Deca',
                                           color: Color(0xFF95A1AC),
